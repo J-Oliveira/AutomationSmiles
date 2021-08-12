@@ -1,0 +1,17 @@
+{
+    "baseUrl": "https://www.smiles.com.br/home",
+    "viewportHeight": 900,
+    "viewportWidth": 1500,
+    "defaultCommandTimeout": 10000,
+
+    "video": true,
+    "videoCompression": 32,
+    "videoUploadOnPasses": true,
+
+    "reporter": "mochawesome",
+
+    "reporterOptions": {
+        "overwrite": false
+    }
+}
+    

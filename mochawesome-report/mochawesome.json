@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-12T00:03:58.003Z",
+    "end": "2021-08-12T00:03:58.206Z",
+    "duration": 203,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1e9b01e5-deae-4d64-bf40-8c449222b014",
+      "title": "",
+      "fullFile": "cypress/integration/Automacao.feature",
+      "file": "cypress/integration/Automacao.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "afa2b6ee-626c-427b-92b7-0eeeda96eaed",
+          "title": "Comprando uma passagem aérea pelo site Smiles",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Efetuar um pedido de viagem aérea",
+              "fullTitle": "Comprando uma passagem aérea pelo site Smiles Efetuar um pedido de viagem aérea",
+              "timedOut": null,
+              "duration": 162,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: eu acesse o site",
+                "estack": "Error: Step implementation missing for: eu acesse o site\n    at Context.resolveAndRunStepDefinition (https://www.smiles.com.br/__cypress/tests?p=cypress\\integration\\Automacao.feature:10474:11)\n    at Context.eval (https://www.smiles.com.br/__cypress/tests?p=cypress\\integration\\Automacao.feature:9789:35)",
+                "diff": null
+              },
+              "uuid": "0510ae6f-d528-45fc-9ed8-bde81a37795e",
+              "parentUUID": "afa2b6ee-626c-427b-92b7-0eeeda96eaed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0510ae6f-d528-45fc-9ed8-bde81a37795e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
